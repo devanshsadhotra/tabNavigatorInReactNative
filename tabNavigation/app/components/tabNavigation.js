@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {TabNavigator} from 'react-navigation';
 import {AppRegistry,
   Text,
+  View
 } from 'react-native';
+import Pride from './moments'
 class RecentChats extends React.Component{
     render(){
         return <Text> List of Recent Chats </Text>
@@ -13,14 +15,16 @@ class AllContacts extends React.Component{
         return <Text> List of Contacts </Text>
     }
 }
-class Moments extends React.Component{
+class PrivateMessage extends React.Component{
     render(){
         return <Text> List of Contacts </Text>
     }
 }
-class PrivateMessage extends React.Component{
+class Moments extends React.Component{
     render(){
-        return <Text> List of Contacts </Text>
+        return <View>
+            <Pride/>
+        </View>
     }
 }
 const MainScreenNavigator =TabNavigator({
